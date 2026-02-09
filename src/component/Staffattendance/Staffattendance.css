@@ -1,0 +1,265 @@
+/* .attendance-container {
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+.time {
+  color: red;
+}
+.timer {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.checkin-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.live-timer {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.time {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.checkin-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.attendance-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.timer {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.checkin-button,
+.checkout-button {
+  height: 60;
+  width: 180px;
+  padding: 15px 26px;
+  font-size: 1rem;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.message {
+  color: green;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.break-button {
+  height: 50px;
+  width: 180px;
+  background-color: orange;
+  color: white;
+  margin-left: 10px;
+}
+
+.back-button {
+  height: 50px;
+  width: 180px;
+  background-color: green;
+  color: white;
+  margin-left: 10px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 360px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.confirm-btn,
+.cancel-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.confirm-btn {
+  background-color: #10b981;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #ef4444;
+  color: white;
+} */
+
+.attendance-container {
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.live-timer {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.timer {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.time {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Buttons */
+.checkin-button,
+.checkout-button,
+.break-button,
+.back-button {
+  height: 50px;
+  width: 180px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.checkin-button {
+  background-color: #007bff;
+}
+
+.checkout-button {
+  background-color: #6c757d;
+}
+
+.break-button {
+  background-color: orange;
+}
+
+.back-button {
+  background-color: green;
+}
+
+.checkin-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Message */
+.message {
+  color: #0077cc;
+  margin-top: 0rem;
+  font-weight: bold;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.confirm-btn,
+.cancel-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.confirm-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #7a7676;
+  color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .checkin-button,
+  .checkout-button,
+  .break-button,
+  .back-button {
+    width: 100%;
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+  }
+
+  .timer {
+    font-size: 2rem;
+  }
+
+  .modal {
+    width: 95%;
+  }
+}

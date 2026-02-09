@@ -1,0 +1,80 @@
+/* .dashboard-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-body {
+  padding: 1rem;
+  background: #f5f7fa;
+  height: 100%;
+  overflow-y: auto;
+} */
+
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+
+/* Mobile-first design: stacked sidebar and content */
+@media (max-width: 768px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sidebar__link {
+    justify-content: center;
+    padding: 0.6rem;
+    font-size: 13px;
+  }
+
+  .sidebar__profile {
+    display: none; /* Hide profile on small devices for space */
+  }
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-body {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Larger screens (TV, 2K+) */
+@media (min-width: 1600px) {
+  .dashboard-body {
+    padding: 2rem 3rem;
+    font-size: 18px;
+  }
+
+  .sidebar {
+    width: 300px;
+    padding: 1.5rem;
+  }
+
+  .sidebar__link {
+    font-size: 16px;
+  }
+}

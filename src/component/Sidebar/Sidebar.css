@@ -1,0 +1,227 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #67accc99;
+
+  border-right: 1px solid #eee;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.p {
+  color: #4125de;
+}
+.button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sidebar__profile {
+  text-align: center;
+}
+
+.sidebar__profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.sidebar__profile h3 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 16px;
+  color: #333;
+}
+
+.sidebar__profile p {
+  font-size: 13px;
+  color: #363638;
+}
+
+.sidebar__actions {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: #3b82f6;
+  font-size: 14px;
+}
+
+.sidebar__section {
+  margin-top: 1rem;
+}
+
+.sidebar__section-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #363638;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.6rem;
+  font-size: 14px;
+  color: rgb(49, 48, 51);
+  text-decoration: none;
+  border-radius: 8px;
+  gap: 10px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  position: relative;
+  background-color: white;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+}
+
+.sidebar__link {
+  background-color: white;
+  color: rgb(49, 48, 51);
+}
+
+.sidebar__link.clicked {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* Hover effect */
+.sidebar__link:hover {
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+}
+
+/* Active/clicked effect */
+.sidebar__link:active {
+  background-color: #3b82f6; /* amber-500 */
+  color: rgb(247, 245, 245);
+  font-size: 14px;
+}
+
+.sidebar__link .badge {
+  position: absolute;
+  right: 10px;
+  background-color: #22c55e;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 999px;
+}
+
+.sidebar__link.clicked {
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 41, 59, 0.6); /* slate-800 with opacity */
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px); /* glass effect */
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  animation: scaleIn 0.3s ease-out;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.modal h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #111827; /* gray-900 */
+}
+
+.modal p {
+  font-size: 0.95rem;
+  color: #4b5563; /* gray-600 */
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.confirm-btn,
+.cancel-btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.confirm-btn {
+  background: #3b82f6; /* red-600 */
+  color: white;
+}
+
+.cancel-btn {
+  background: #6b7280; /* gray-600 */
+  color: white;
+}
+
+/* Fade and scale animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* 
+add */
+
+.sidebar__photo-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0 auto 10px;
+  border: 3px solid #ddd;
+}
+
+.sidebar__photo-container:hover {
+  border-color: #007bff;
+}
+
+.sidebar__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
