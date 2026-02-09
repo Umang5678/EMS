@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Lottie from "lottie-react";
-import "./StaffAttendance.css";
+import "./Staffattendance.css";
 import api from "./../../../axiosConfig";
 import done from "./../../assets/Done1.json";
 
