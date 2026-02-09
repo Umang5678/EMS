@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import moment from "moment";
-import api from "./../../../axiosConfig";
+import api from "../../../axiosConfig";
 import "./List.css";
 
 interface AttendanceRecord {
@@ -23,7 +23,7 @@ const List: React.FC = () => {
   const [totalPages, setTotalPages] = useState(1);
 
   const [startDate, setStartDate] = useState(
-    moment().startOf("month").format("YYYY-MM-DD")
+    moment().startOf("month").format("YYYY-MM-DD"),
   );
   const [endDate, setEndDate] = useState(moment().format("YYYY-MM-DD"));
 
@@ -50,7 +50,7 @@ const List: React.FC = () => {
             Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",
           },
-        }
+        },
       );
 
       if (response.data.success) {
@@ -155,16 +155,16 @@ const List: React.FC = () => {
                         : null;
 
                       let totalDuration = moment.duration(
-                        checkOut.diff(checkIn)
+                        checkOut.diff(checkIn),
                       );
 
                       if (lunchStart && lunchEnd) {
                         const lunchDuration = moment.duration(
-                          lunchEnd.diff(lunchStart)
+                          lunchEnd.diff(lunchStart),
                         );
                         totalDuration = moment.duration(
                           totalDuration.asMilliseconds() -
-                            lunchDuration.asMilliseconds()
+                            lunchDuration.asMilliseconds(),
                         );
                       }
 

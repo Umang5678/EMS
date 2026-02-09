@@ -3,7 +3,7 @@ import Login from "./component/Login/Login";
 import DashboardLayout from "./component/DashboardLayout/DashboardLayout";
 import UserList from "./component/Userlist/Userlist";
 import StaffAttendance from "./component/Staffattendance/Staffattendance";
-import List from "./component/LIst/List";
+import List from "./component/List/List";
 import ProtectedRoute from "./component/ProtectedRoute";
 import DashboardHome from "./component/Dashboard/DashboardHome";
 import Leave from "./component/Leave/Leave";
