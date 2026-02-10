@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Attendance from "../Attendance/Attendance";
 import api from "./../../../axiosConfig";
 import { FaUserPlus, FaEdit, FaPlus } from "react-icons/fa";
-import "./Userlist";
+import "./Userlist.css";
 interface User {
   _id: string;
   name: string;
